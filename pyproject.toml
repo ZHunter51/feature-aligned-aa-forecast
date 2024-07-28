@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "fan-beats"
+version = "1"
+description = "Feature-aligned N-BEATS with Sinkhorn divergence (ICLR 2024)"
+authors = ["Joonhun Lee <iam@leejoonhun.xyz>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "~3.9"
+black = "~23.3"
+isort = "~5.12"
+tqdm = "~4.65"
+pandas = "~1.5"
+torch = "~2.0"
+pykeops = "~2.1"
+geomloss = { git = "https://github.com/jeanfeydy/geomloss.git" }
+wandb = "~0.15"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
